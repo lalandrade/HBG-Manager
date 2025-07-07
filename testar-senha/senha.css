@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #F0F8FF;
+  color: #1d1d2e;
+}
+/* Seu CSS da estrutura */
+.container {
+    background-color: #F0F8FF;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.navbar {
+    display: flex;
+    margin: auto;
+    height: 100px;
+    justify-content: left;
+}
+
+h1 {
+    color: #1D243C;
+    font-size: 34px;
+    margin-top: 50px;
+    margin-left: -200px;
+}
+
+#iconDash {
+    width: 40px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 200px;
+}
+#iconDash1 {
+    width: 70px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 200px;
+}
+
+
+
+.notCard {
+    display: flex;
+    width: 45px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: -10px;
+    
+}
+.bi.bi-bell-fill, .bi.bi-info-circle {
+  color: #1D243C;
+  font-size: 18px;
+  text-align: center;
+}
+.bi.bi-person-fill{
+    font-size: 40px;
+}
+
+.fa-bell, .fa-circle-question {
+    color: #1D243C;
+    font-size: 25px;
+    text-align: center;
+}
+
+#card {
+    display: flex;
+    background-color: white;
+    width: 220px;
+    height: 60px;
+    margin-top: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    box-shadow: black 2px 2px 5px;
+    color: #1D243C;
+}
+
+#nomeCard {
+    font-size: 20px;
+    font-weight: bold;
+    width: 140px;
+}
+
+#cargoCard {
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#imagemCard {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    margin-top: -7px;
+}
+
+#areaNot {
+    display: none;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    position: fixed;
+    left: 1360px;
+    bottom: 430px;
+    box-shadow: black 2px 2px 5px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}
+
+h2 {
+    text-align: center;
+    color: #1D243C;
+}
+
+.nomeNot {
+    width: 280px;
+    height: 50px;
+    background-color: #bec3c7;
+    border-radius: 10px;
+    overflow-y: auto;
+    margin: 10px auto;
+}
+
+.subLateral {
+    display: none;
+    width: 300px;
+    background-color: #0D152F;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -25px;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px white solid;
+}
+
+.sub {
+    display: block;
+    color: white;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 28px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.sub:hover {
+    background-color: #3A3D51;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Formulário */
+.form-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+
+.card-form {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  width: 550px;
+  height: 410px;
+  text-align: center;
+  border: #ccc 2px solid;
+  border-bottom: #ccc 4px solid;
+  
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  text-align: left;
+font-size: 20px;
+ 
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #1D243C;
+  margin-bottom: 10px;
+  
+}
+
+.input-group input {
+  border: none;
+  background-color: #f0f2f5;
+  padding: 24px;
+  border-radius: 12px;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  outline: none;
+  color: #333;
+ border: #ccc 2px solid;
+ border-bottom: #ccc 4px solid;
+
+
+}
+
+.btn-salvar {
+  background-color: #1d1d2e;
+  color: white;
+ 
+  padding: 18px;
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn-salvar:hover {
+    opacity: 0.9;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  height: 100px;
+  background-color: #F0F8FF;
+}
+
+.left-navbar {
+  display: flex;
+  align-items: center;
+    gap: 20px;
+  
+}
+
+.right-navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+

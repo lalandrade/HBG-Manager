@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte principal do texto */
+    background: linear-gradient(to bottom, #F0F8FF, #1D243C); /* Degrade azul-claro até azul-escuro */
+    min-height: 100vh; /* Altura mínima da tela: 100% da altura da janela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+}
+
+/* Área principal da tela (painéis juntos) */
+.container {
+    display: flex; 
+    width: 1100px;
+    height: 650px;
+    background-color: #1D243C; 
+    border-radius: 10px;    
+    overflow: hidden;        
+}
+
+/* Painel esquerdo (logo) */
+.left-panel {
+     flex: 1;
+    background-color: #1D243C;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* 👈 necessário para que .linha funcione */ /* Linha separadora clara à direita */
+   
+    
+}
+.linha {
+    position: absolute;        /* Posição absoluta */
+    right: 0;                  /* Alinhado à direita da seção */
+    top: 5;
+    height: 60%;              /* Altura total da seção */
+    width: 1px;                /* Espessura da linha */
+    background-color: #E0E0E0; /* Cor da linha */
+}
+
+
+/* Estilo da imagem do logo */
+.left-panel .logo {
+    height: 400px; /* Altura da imagem do logo */
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Painel direito (formulário) */
+.right-panel {
+    flex: 1;
+    padding: 50px;
+    background-color: #1D243C;
+    color: white; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+/* Título "LOGIN" */
+.right-panel h2 {
+    font-size: 35px;
+    margin-bottom: 100px;
+    letter-spacing: 1px; /* Espaço entre letras */
+    margin-top: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Espaçamento entre campos */
+.form-group {
+    margin-bottom: 10px; /* Espaçamento entre os campos do formulário */
+}
+
+/* Texto dos rótulos (Usuário, Senha) */
+label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: block;
+    color: white;
+}
+
+/* Estilo dos campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent; /* Sem fundo branco */
+    color: white;                  /* Texto branco */
+    border: none;                  /* Remove borda padrão */
+    outline: none;                 /* Remove contorno ao focar */
+    font-size: 17px;
+    border-bottom: #F0F8FF 1px solid; /* Linha azul clara na parte inferior */
+    margin-bottom: 40px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #1D243C inset !important; /* cor do fundo real */
+  -webkit-text-fill-color: white !important; /* força texto branco */
+  transition: background-color 5000s ease-in-out 0s; /* esconde troca de cor */
+  border-bottom: 1px solid #F0F8FF !important; /* mantém linha azul */
+}
+/* Ícone do olho para mostrar/esconder senha */
+.form-group {
+  position: relative;
+}
+/* Ícone do usuário no campo de email */
+.form-group i {
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    color: #E0E0E0; /* Cor do ícone */
+    
+}
+/* Estilo dos botões */
+.btn {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;      /* Fundo branco */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Quando o mouse passa por cima do botão */
+.btn:hover {
+    background-color: #E0E0E0; /* Muda o fundo para cinza claro */
+}

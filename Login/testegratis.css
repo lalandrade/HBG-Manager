@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte principal do texto */
+    background: linear-gradient(to bottom, #F0F8FF, #1D243C); /* Degrade azul-claro até azul-escuro */
+    min-height: 100vh; /* Altura mínima da tela: 100% da altura da janela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+}
+
+/* Área principal da tela (painéis juntos) */
+.container {
+    display: flex; 
+    width: 1100px;
+    height: 650px;
+    background-color: #1D243C; 
+    border-radius: 10px;    
+    overflow: hidden;        
+}
+.panel {
+    flex: 1;
+    padding: 50px;
+    background-color: #1D243C;
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    color: white; /* Cor do texto */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    /* Adiciona um espaçamento interno */
+    padding: 20px;
+    position: relative; /* Necessário para que .linha funcione */
+}
+.linha {
+    position: absolute;        /* Posição absoluta */
+    right: 140px;                  /* Alinhado à direita da seção */
+    top: 180px;                /* Distância do topo */
+    height: 1px;              /* Altura total da seção */
+    width: 800px;                /* Espessura da linha */
+    background-color: #E0E0E0; /* Cor da linha */
+}
+.panel h2 {
+    color: #F0F8FF; /* Cor do texto do título */
+    font-size: 34px; /* Tamanho do texto do título */
+    position: absolute;
+    top: 100px;
+    left: 230px;
+    margin: 0;
+    padding: 0;
+}
+.panel p {
+    color: #F0F8FF; /* Cor do texto do parágrafo */
+    font-size: 16px; /* Tamanho do texto do parágrafo */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaçamento acima do parágrafo */
+    font-weight: bold;
+}
+.panel .btn {
+    background-color: #F0F8FF; /* Cor de fundo do botão */
+    color: #1D243C; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    font-size: 16px; /* Tamanho do texto do botão */
+    margin-top: 60px; /* Espaçamento acima do botão */
+  
+}
+.btn:hover {
+    background-color: #E0E0E0; /* Muda o fundo para cinza claro */
+}

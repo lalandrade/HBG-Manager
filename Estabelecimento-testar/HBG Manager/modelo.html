@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBG Manager</title>
+    <link rel="shortcut icon" href="logo/COMILÂNDIA(1) 4-min-min (2) (1) (1) - Copia.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="barraLateral">
+        <img src="logo/COMILÂNDIA(1) 4-min-min (2) (1) (1).png" id="logo">
+        <a href="dashboard.html" class="opLateral"><i class="fa-solid fa-chart-pie"></i>Dashboard</a>
+        <p class="opLateral" onclick="subEstoque()"><i class="fa-solid fa-boxes-stacked"></i>Estoque <img src="icons/Chevron Down.png" id="seta2"></p>
+        <div class="subLateral" id="sub1">
+            <a href="#" class="sub"><i class="fa-solid fa-cubes-stacked"></i> Estoque atual</a>
+            <a href="#" class="sub"><i class="fa-solid fa-cart-shopping"></i> Entradas e saídas</a>
+            <a href="#" class="sub"><i class="fa-solid fa-truck"></i>Fornecedores</a>
+        </div>
+        <p class="opLateral" onclick="subVendas()"><i class="fa-solid fa-coins"></i>Vendas <img src="icons/Chevron Down.png" id="seta3"></p>
+        <div class="subLateral" id="sub2">
+            <a href="#" class="sub"><i class="fa-solid fa-money-bills"></i> Vender</a>
+            <a href="#" class="sub"><i class="fa-solid fa-clipboard"></i> Gestor de pedidos</a>
+            <a href="#" class="sub"><i class="fa-solid fa-pen-to-square"></i> Cardapio</a>
+            <a href="#" class="sub"><i class="fa-solid fa-user"></i> Clientes</a>
+        </div>
+        <p class="opLateral" onclick="subFinanceiro()"><i class="fa-solid fa-chart-simple"></i>Financeiro <img src="icons/Chevron Down.png" id="seta4"></p>
+        <div class="subLateral" id="sub3">
+            <a href="#" class="sub"><i class="fa-solid fa-eye"></i> Visão geral</a>
+            <a href="#" class="sub"><i class="fa-solid fa-door-open"></i> Entradas e saídas</a>
+            <a href="#" class="sub"><i class="fa-solid fa-newspaper"></i> Relatórios</a>
+        </div>
+        <p class="opLateral" onclick="subLoja()"><i class="fa-solid fa-users-gear"></i>Admnistrar loja <img src="icons/Chevron Down.png" id="seta5"></p>
+        <div class="subLateral" id="sub4">
+            <a href="#" class="sub"><i class="fa-solid fa-shop"></i> Estabelecimento</a>
+            <a href="#" class="sub"><i class="fa-solid fa-clock"></i> Horário</a>
+            <a href="#" class="sub"><i class="fa-solid fa-arrow-up-right-from-square"></i> Integração</a>
+            <a href="#" class="sub"><i class="fa-solid fa-users-viewfinder"></i> Funcionários</a>
+            <a href="#" class="sub"><i class="fa-solid fa-money-bill-transfer"></i> Impostos</a>
+            <a href="#" class="sub"><i class="fa-solid fa-scale-balanced"></i> Políticas da loja</a>
+        </div>
+        <p class="opLateral" onclick="subConfig()"><i class="fa-solid fa-gear"></i>Configurações <img src="icons/Chevron Down.png" id="seta6"></p>
+        <div class="subLateral" id="sub5">
+            <a href="#" class="sub"><i class="fa-solid fa-sliders"></i> Preferências</a>
+            <a href="#" class="sub"><i class="fa-solid fa-spinner"></i> Backup</a>
+            <a href="#" class="sub"><i class="fa-solid fa-envelope"></i> Notificações</a>
+            <a href="#" class="sub"><i class="fa-solid fa-user-gear"></i> Dados do ADM</a>
+            <a href="#" class="sub"><i class="fa-solid fa-file-signature"></i> Assinatura</a>
+            <a href="#" class="sub"><i class="fa-solid fa-download"></i> Atualizações</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <img src="icons/Union.png" id="iconDash"><h1>Dashboard</h1>
+            <button class="notCard" id="notifi" onclick="not()"><i class="fa-solid fa-bell"></i></button>
+            <div id="areaNot">
+                <h2>Notificações</h2>
+                <div class="nomeNot">
+
+                </div>
+                <div class="nomeNot">
+
+                </div>
+                <div class="nomeNot">
+
+                </div>
+                <div class="nomeNot">
+
+                </div>
+                <div class="nomeNot">
+
+                </div>
+            </div>
+            <button class="notCard" id="ajuda"><i class="fa-regular fa-circle-question"></i></i></button>
+            <div id="card">
+                <div>
+                    <p id="nomeCard">Priscila ▾</p>
+                    <p id="cargoCard">Adm</p>
+                </div>
+                <img src="img/burro.gif" id="imagemCard">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script/notificacao.js"></script>
+<script src="script/subs.js"></script>
+</html>
